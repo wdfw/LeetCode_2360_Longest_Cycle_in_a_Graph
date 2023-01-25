@@ -11,8 +11,6 @@
 果重複走到這個點，就將現在的步數減去上次的步數就是環的長度
 
 ![image](https://user-images.githubusercontent.com/111077328/214663173-dcda0f02-4d6a-4210-8681-c6c1260ddfce.png)
-每次走訪透過passed紀錄當次走訪過的路，travel_step紀錄走訪時的步數，
-如果當passed走過時就代表為環，算出步數記錄後跳出，
-只有當travel_step為0的點要進行DFS，因為代表這點所連成的區從未走過，而當DFS到travel_step不為0的點就跳出
-，因為再走下去也不會影響環的大小
+每次走訪透過passed紀錄當次走訪過的路，travel_step紀錄走訪時的步數，如果當passed走過時就代表為環，算出步數記錄後跳出，
+只有當travel_step為0的點要進行DFS，因為代表這點所連成的區從未走過，而當DFS到travel_step不為0的點就跳出，再走下去也不會影響環的大小  
 因為資料很大所以不用遞迴走訪，且僅透過一條陣列重複紀錄每次DFS經過的路徑
